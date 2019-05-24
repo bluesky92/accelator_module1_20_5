@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convert Currency</title>
+	<script type="text/javascript" src = "tien.js"></script>
+</head>
+<body>
+	<label>Amount</label>
+	<input type="text" id="sotien">
+	<br>
+	<br>
+	<label>From Currency</label>
+	<select id ="fromcur">
+		<option value="fusd" >USD</option>
+		<option value="fvnd" >VND</option>
+	</select>
+	<br> <br><br>
+	<label>To Currency</label>
+	<select id="tocur">
+		<option value="tusd" >USD</option>
+		<option value="tvnd" >VND</option>
+	</select>
+	<br> <br><br>
+	<p id = 'ketqua'>NaN</p>
+	<br> <br><br>
+
+	<button onclick="convert()">Convert</button>
+</body>
+</html>
