@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+</head>
+<body>
+	<label>Nhập vào một số nguyên dương bất kì!</label>
+	<br>
+	<input type="text" name="ok" id='nhap'>
+	<br>
+	<button onclick="sum()">Sum</button>
+	<br>
+	<label>Kết quả:</label>
+	<p id='rls'></p>
+	<script type="text/javascript">
+		function sum() {
+			var num = parseInt(document.getElementById('nhap').value);
+			var tong =0;
+			//console.log('num:'+num);
+			for (var i = 1; i <= num; i++) {
+				tong+= i;
+			}
+			document.getElementById('rls').innerHTML = tong;
+		}
+		
+	</script>
+</body>
+</html>

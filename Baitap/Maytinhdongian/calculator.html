@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<p id="line1">Đây là dòng chữ màu đỏ </p>
+	<p class ="arrow-up"></p>
+	<p class ="border"> ok</p>
+	<p id ="rsl"class="border"
+		   style = "color:red; text-align:right; "></p>
+	<button  id="rect" class = "border" onclick="push(1)">
+		<font size ="10"> 1 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push(2)">
+		<font size ="10"> 2 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push(3)">
+		<font size ="10"> 3 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push('+')">
+		<font size ="10"> + </font>
+	</button>
+	<br>
+	<button  id="rect" class = "border" onclick="push(4)">
+		<font size ="10"> 4 </font>
+	</button>
+	
+	<button  id="rect" class = "border" onclick="push(5)">
+		<font size ="10"> 5 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push(6)">
+		<font size ="10"> 6 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push('-')">
+		<font size ="10"> - </font>
+	</button>
+	<br>
+	<button  id="rect" class = "border" onclick="push(7)">
+		<font size ="10"> 7 </font>
+	</button>
+
+	<button  id="rect" class = "border" onclick="push(8)">
+		<font size ="10"> 8 </font>
+	</button>
+	 
+	<button  id="rect" class = "border" onclick="push(9)">
+		<font size ="10"> 9 </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push('*')">
+		<font size ="10"> * </font>
+	</button>
+	<br>
+	<button  id="rect" class = "border" onclick="xoa()">
+		<font size ="10"> C </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push(0)">
+		<font size ="10"> 0 </font>
+	</button>
+	 
+	<button  id="rect" class = "border" onclick="push('/')">
+		<font size ="10"> / </font>
+	</button>
+	<button  id="rect" class = "border" onclick="push('=');cat()">
+		<font size ="10"> = </font>
+	</button>
+</body>
+</html>

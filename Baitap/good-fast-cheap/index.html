@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Good-fast-cheap</title>
+</head>
+<body>
+
+	<input type="checkbox" id ='good'  > <label>good</label>
+	<br>
+	<input type="checkbox" id ='cheap'> <label>cheap</label>
+	<br>
+	<input type="checkbox" id ='fast'> <label>fast</label>
+	<br>
+	<br>
+	<br>
+	<button onclick="cal()">Run</button>
+	<button onclick="cal1()">Run1</button>
+	<script type="text/javascript">
+		function cal1() {
+			//sleep(1000);
+			//console.log("click event!!");
+			funny();
+			//console.log(cal());
+			//setTimeout(cal(),10000);
+			
+			//cal();
+		
+		}
+		function cal() {
+			// body...
+		
+			var good = document.getElementById('good').checked;
+			//good = parse(good);
+			var cheap = document.getElementById('cheap').checked; 
+			var fast = document.getElementById('fast').checked;
+			//console.log(good);
+			//console.log(cheap);
+			//console.log(fast);
+			//var combie = good+'_'+cheap+'_'+fast;
+			//return combie;
+			//console.log(combie);
+			//if (good*cheap*fast == true ) funny(); 
+
+			if (good == true) {
+				if (cheap==true)
+					 
+					document.getElementById('fast').checked = false;
+			
+						
+				else  document.getElementById('fast').checked = true;
+				}	
+			else 
+				if (cheap == true) 
+					 document.getElementById('fast').checked = true;
+			
+				
+			 
+
+			
+		} 
+		function funny() {
+			//console.log(Math.round(Math.random()*2));
+			var test = Math.round(Math.random()*2);
+			switch (test){
+				case 0:
+					 
+					document.getElementById('good').checked = false;
+					document.getElementById('cheap').checked = true;
+					document.getElementById('fast').checked = true;
+					break;
+				case 1:
+					//console.log('ok');'true_true_false'
+					document.getElementById('good').checked = true;
+					document.getElementById('cheap').checked = true;
+					document.getElementById('fast').checked = false;
+					break;
+				case 2:
+					//console.log('ok'); 'true_false_true'
+					document.getElementById('good').checked = true;
+					document.getElementById('cheap').checked = false;
+					document.getElementById('fast').checked = true;
+					break;
+				default:
+					console.log("def"+cal());
+					break;
+			} 
+
+		}
+		 function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds){
+                break;
+            }
+        }
+    }
+
+	</script>
+
+</body>
+</html>
